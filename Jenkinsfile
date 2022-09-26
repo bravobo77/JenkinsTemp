@@ -9,7 +9,7 @@ pipeline {
     environment {
       AWS_ACCESS_KEY_ID = credentials('awsAccessKeyID')
       AWS_SECRET_ACCESS_KEY = credentials('awsSecretAccessKey')
-      AWS_DEFAULT_REGION = 'ap-northeast-2'
+      AWS_DEFAULT_REGION = 'ap-northeast-1'
       HOME = '.' // Avoid npm root owned
     }
 
