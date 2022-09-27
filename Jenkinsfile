@@ -120,7 +120,7 @@ pipeline {
 
             dir ('./server'){
                 sh """
-                docker build . -t server --build-arg env=${PROD}
+                docker build --tag dockerfile:0.1 .
                 """
             }
           }
