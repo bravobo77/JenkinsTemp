@@ -120,6 +120,7 @@ pipeline {
 
             dir ('./server'){
                 sh """
+                docker images
                 docker build --tag dockerfile:0.1 .
                 """
             }
