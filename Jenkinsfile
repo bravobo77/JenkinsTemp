@@ -120,7 +120,7 @@ pipeline {
 
             dir ('./server'){
                 sh """
-                docker build . -t server --build-arg port=9090 .
+                docker build . 
                 """
             }
           }
@@ -141,7 +141,7 @@ pipeline {
 
             dir ('./server'){
                 sh '''
-                docker run -p 90:90 -d server
+                docker run -p 80:80 -d server
                 '''
             }
           }
