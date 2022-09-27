@@ -6,8 +6,7 @@ WORKDIR /
 COPY . /
 
 # update apt packages
-ARG env
-ENV APP_ENV=$env 
+ARG port
 RUN npm install
 RUN npm run build
 
